@@ -48,5 +48,5 @@ SELECT
     mascota.nombre AS mascota,
     COUNT(consulta.id) AS total_consultas
 FROM mascota 
-LEFT JOIN consulta  ON mascota.id = consulta.mascota_fk
+LEFT JOIN consulta ON mascota.id = consulta.mascota_fk
 GROUP BY mascota.id, mascota.nombre;
