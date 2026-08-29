@@ -39,7 +39,7 @@ CREATE TABLE mascota (
     FOREIGN KEY (propietario_fk) REFERENCES propietario(id)
 );
 
-/*  5. TABLA CONSULTA */
+/* TABLA CONSULTA */
 CREATE TABLE consulta (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mascota_fk INT NOT NULL,
